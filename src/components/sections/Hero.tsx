@@ -57,7 +57,7 @@ const Hero = () => {
         const { clientX, clientY } = e;
         const xPos = (clientX / window.innerWidth - 0.5) * 30;
         const yPos = (clientY / window.innerHeight - 0.5) * 30;
-        
+
         gsap.to(imageRef.current, {
           x: xPos,
           y: yPos,
@@ -73,7 +73,7 @@ const Hero = () => {
     <section ref={containerRef} className="relative pt-24 md:pt-32 pb-16 px-6 md:px-12 max-w-[1280px] mx-auto min-h-[95vh] flex flex-col justify-center overflow-hidden">
       {/* Dynamic Background Noise/Texture Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }}></div>
-      
+
       {/* Background Glows */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] animate-pulse"></div>
@@ -94,28 +94,16 @@ const Hero = () => {
             </span>
             <span className="text-[11px] uppercase font-black tracking-[0.2em] text-primary-foreground/80">Available for innovative projects</span>
           </motion.div>
-
           <div className="overflow-hidden mb-2">
-            <h1 className="hero-title-line font-manrope text-3xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tighter">
-              Crafting <span className="italic text-primary">Digital</span>
+            <h1 className="hero-title-line font-manrope text-4xl md:text-7xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter">
+              Jahidul <span className="italic text-primary">Islam</span>
             </h1>
           </div>
-          <div className="overflow-hidden mb-6">
-            <h1 className="hero-title-line font-manrope text-3xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tighter">
-              Experiences <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">at Scale</span>
+          <div className="overflow-hidden mb-8">
+            <h1 className="hero-title-line font-manrope text-2xl md:text-5xl lg:text-6xl font-black text-white/40 leading-[1] tracking-tighter uppercase">
+              Frontend <span className="text-white/20">&</span> Web Developer
             </h1>
           </div>
-          
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 1 }}
-            className="mb-8"
-          >
-            <p className="font-manrope text-xl md:text-2xl font-bold text-white/90 tracking-tight">
-              I'm <span className="text-primary italic">Jahidul Islam</span> — Frontend Developer
-            </p>
-          </motion.div>
 
           <p className="hero-text font-inter text-lg md:text-xl text-white/40 max-w-xl mb-12 leading-relaxed italic">
             "Crafting <span className="text-white/80">high-performance</span> web applications with <span className="text-primary">precision</span> and <span className="text-secondary">modern aesthetics</span>."
@@ -153,7 +141,7 @@ const Hero = () => {
           <div ref={imageRef} className="relative group max-w-[340px] w-full transform-gpu">
             {/* Glow Aura */}
             <div className="absolute -inset-6 bg-gradient-to-tr from-primary/30 to-secondary/30 rounded-[3rem] blur-3xl opacity-30 group-hover:opacity-60 transition-opacity duration-700"></div>
-            
+
             <div className="relative z-10 rounded-[3rem] overflow-hidden border border-white/10 p-4 bg-white/5 backdrop-blur-3xl shadow-2xl">
               <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden">
                 <Image
@@ -168,7 +156,7 @@ const Hero = () => {
 
             {/* Floating Tech Badges (Staggered Floating) */}
             <motion.div
-              animate={{ 
+              animate={{
                 y: [0, -20, 0],
                 rotate: [0, 10, 0]
               }}
@@ -178,7 +166,7 @@ const Hero = () => {
               <img src="https://cdn.simpleicons.org/react/61DAFB" className="w-10 h-10 object-contain" alt="React" />
             </motion.div>
             <motion.div
-              animate={{ 
+              animate={{
                 y: [0, 20, 0],
                 rotate: [0, -10, 0]
               }}
