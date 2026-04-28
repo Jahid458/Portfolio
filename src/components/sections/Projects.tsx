@@ -89,7 +89,7 @@ const Projects = () => {
       title: 'FrostGuard Winter Cloth Donation',
       description: 'The Winter Clothing Donation website is designed to bridge the gap between compassionate donors and those in need, ensuring essential winter clothing reaches vulnerable communities across Bangladesh.Through this platform, donors can easily contribute their gently used or new winter garments via convenient pickup services, drop-off locations, or targeted campaigns. By connecting donors with volunteers and local organizations, the website fosters a collaborative approach to combat cold-weather hardships, promoting social responsibility and community support.This encourages individuals to participate actively in creating a warmer and more caring society. the website seeks to empower both donors and recipients, making generosity a driving force for positive change.',
       image: 'https://i.ibb.co.com/Y4VjRT0Y/Screenshot-2026-04-28-160400.png',
-      tags: ['Next.js', 'PostgreSQL', 'Stripe', 'Redis'],
+      tags: ['Html ', 'css', 'javascript', 'Reactjs', 'firebase'],
       github: 'https://github.com/Jahid458/ForstGuard-cloth-donation',
       live: 'https://cloth-donation-app.web.app/ ',
       server: '#',
